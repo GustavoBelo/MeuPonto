@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA527E882C8BD4FC008E4A55 /* MeuPontoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527E872C8BD4FC008E4A55 /* MeuPontoApp.swift */; };
+		AA527E8A2C8BD4FC008E4A55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527E892C8BD4FC008E4A55 /* ContentView.swift */; };
+		AA527E8C2C8BD4FC008E4A55 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527E8B2C8BD4FC008E4A55 /* Item.swift */; };
+		AA527E8E2C8BD4FE008E4A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA527E8D2C8BD4FE008E4A55 /* Assets.xcassets */; };
+		AA527E912C8BD4FE008E4A55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA527E902C8BD4FE008E4A55 /* Preview Assets.xcassets */; };
+		AA527E9C2C8BD4FE008E4A55 /* MeuPontoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527E9B2C8BD4FE008E4A55 /* MeuPontoTests.swift */; };
+		AA527EA62C8BD4FE008E4A55 /* MeuPontoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527EA52C8BD4FE008E4A55 /* MeuPontoUITests.swift */; };
+		AA527EA82C8BD4FE008E4A55 /* MeuPontoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527EA72C8BD4FE008E4A55 /* MeuPontoUITestsLaunchTests.swift */; };
+		AA527EB62C8BD750008E4A55 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527EB52C8BD750008E4A55 /* MenuBarController.swift */; };
+		AA527EB82C8BD7F7008E4A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527EB72C8BD7F7008E4A55 /* AppDelegate.swift */; };
+		AA527EBB2C8BD8DC008E4A55 /* WorkSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527EBA2C8BD8DC008E4A55 /* WorkSessionModel.swift */; };
+		AA527EBD2C8BD8F5008E4A55 /* WorkSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA527EBC2C8BD8F5008E4A55 /* WorkSessionViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA527E982C8BD4FE008E4A55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA527E7C2C8BD4FC008E4A55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA527E832C8BD4FC008E4A55;
+			remoteInfo = MeuPonto;
+		};
+		AA527EA22C8BD4FE008E4A55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA527E7C2C8BD4FC008E4A55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA527E832C8BD4FC008E4A55;
+			remoteInfo = MeuPonto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA527E842C8BD4FC008E4A55 /* MeuPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA527E872C8BD4FC008E4A55 /* MeuPontoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPontoApp.swift; sourceTree = "<group>"; };
+		AA527E892C8BD4FC008E4A55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA527E8B2C8BD4FC008E4A55 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AA527E8D2C8BD4FE008E4A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA527E902C8BD4FE008E4A55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA527E922C8BD4FE008E4A55 /* MeuPonto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeuPonto.entitlements; sourceTree = "<group>"; };
+		AA527E972C8BD4FE008E4A55 /* MeuPontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuPontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA527E9B2C8BD4FE008E4A55 /* MeuPontoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPontoTests.swift; sourceTree = "<group>"; };
+		AA527EA12C8BD4FE008E4A55 /* MeuPontoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuPontoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA527EA52C8BD4FE008E4A55 /* MeuPontoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPontoUITests.swift; sourceTree = "<group>"; };
+		AA527EA72C8BD4FE008E4A55 /* MeuPontoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPontoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA527EB52C8BD750008E4A55 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		AA527EB72C8BD7F7008E4A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA527EBA2C8BD8DC008E4A55 /* WorkSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSessionModel.swift; sourceTree = "<group>"; };
+		AA527EBC2C8BD8F5008E4A55 /* WorkSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSessionViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA527E812C8BD4FC008E4A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA527E942C8BD4FE008E4A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA527E9E2C8BD4FE008E4A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA527E7B2C8BD4FC008E4A55 = {
+			isa = PBXGroup;
+			children = (
+				AA527E862C8BD4FC008E4A55 /* MeuPonto */,
+				AA527E9A2C8BD4FE008E4A55 /* MeuPontoTests */,
+				AA527EA42C8BD4FE008E4A55 /* MeuPontoUITests */,
+				AA527E852C8BD4FC008E4A55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA527E852C8BD4FC008E4A55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA527E842C8BD4FC008E4A55 /* MeuPonto.app */,
+				AA527E972C8BD4FE008E4A55 /* MeuPontoTests.xctest */,
+				AA527EA12C8BD4FE008E4A55 /* MeuPontoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA527E862C8BD4FC008E4A55 /* MeuPonto */ = {
+			isa = PBXGroup;
+			children = (
+				AA527EB92C8BD8D0008E4A55 /* WorkSession */,
+				AA527EB42C8BD742008E4A55 /* MenuBar */,
+				AA527E872C8BD4FC008E4A55 /* MeuPontoApp.swift */,
+				AA527E892C8BD4FC008E4A55 /* ContentView.swift */,
+				AA527E8B2C8BD4FC008E4A55 /* Item.swift */,
+				AA527E8D2C8BD4FE008E4A55 /* Assets.xcassets */,
+				AA527E922C8BD4FE008E4A55 /* MeuPonto.entitlements */,
+				AA527E8F2C8BD4FE008E4A55 /* Preview Content */,
+				AA527EB72C8BD7F7008E4A55 /* AppDelegate.swift */,
+			);
+			path = MeuPonto;
+			sourceTree = "<group>";
+		};
+		AA527E8F2C8BD4FE008E4A55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA527E902C8BD4FE008E4A55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA527E9A2C8BD4FE008E4A55 /* MeuPontoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA527E9B2C8BD4FE008E4A55 /* MeuPontoTests.swift */,
+			);
+			path = MeuPontoTests;
+			sourceTree = "<group>";
+		};
+		AA527EA42C8BD4FE008E4A55 /* MeuPontoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA527EA52C8BD4FE008E4A55 /* MeuPontoUITests.swift */,
+				AA527EA72C8BD4FE008E4A55 /* MeuPontoUITestsLaunchTests.swift */,
+			);
+			path = MeuPontoUITests;
+			sourceTree = "<group>";
+		};
+		AA527EB42C8BD742008E4A55 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				AA527EB52C8BD750008E4A55 /* MenuBarController.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		AA527EB92C8BD8D0008E4A55 /* WorkSession */ = {
+			isa = PBXGroup;
+			children = (
+				AA527EBA2C8BD8DC008E4A55 /* WorkSessionModel.swift */,
+				AA527EBC2C8BD8F5008E4A55 /* WorkSessionViewModel.swift */,
+			);
+			path = WorkSession;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA527E832C8BD4FC008E4A55 /* MeuPonto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA527EAB2C8BD4FE008E4A55 /* Build configuration list for PBXNativeTarget "MeuPonto" */;
+			buildPhases = (
+				AA527E802C8BD4FC008E4A55 /* Sources */,
+				AA527E812C8BD4FC008E4A55 /* Frameworks */,
+				AA527E822C8BD4FC008E4A55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeuPonto;
+			productName = MeuPonto;
+			productReference = AA527E842C8BD4FC008E4A55 /* MeuPonto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA527E962C8BD4FE008E4A55 /* MeuPontoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA527EAE2C8BD4FE008E4A55 /* Build configuration list for PBXNativeTarget "MeuPontoTests" */;
+			buildPhases = (
+				AA527E932C8BD4FE008E4A55 /* Sources */,
+				AA527E942C8BD4FE008E4A55 /* Frameworks */,
+				AA527E952C8BD4FE008E4A55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA527E992C8BD4FE008E4A55 /* PBXTargetDependency */,
+			);
+			name = MeuPontoTests;
+			productName = MeuPontoTests;
+			productReference = AA527E972C8BD4FE008E4A55 /* MeuPontoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA527EA02C8BD4FE008E4A55 /* MeuPontoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA527EB12C8BD4FE008E4A55 /* Build configuration list for PBXNativeTarget "MeuPontoUITests" */;
+			buildPhases = (
+				AA527E9D2C8BD4FE008E4A55 /* Sources */,
+				AA527E9E2C8BD4FE008E4A55 /* Frameworks */,
+				AA527E9F2C8BD4FE008E4A55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA527EA32C8BD4FE008E4A55 /* PBXTargetDependency */,
+			);
+			name = MeuPontoUITests;
+			productName = MeuPontoUITests;
+			productReference = AA527EA12C8BD4FE008E4A55 /* MeuPontoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA527E7C2C8BD4FC008E4A55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AA527E832C8BD4FC008E4A55 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AA527E962C8BD4FE008E4A55 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AA527E832C8BD4FC008E4A55;
+					};
+					AA527EA02C8BD4FE008E4A55 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AA527E832C8BD4FC008E4A55;
+					};
+				};
+			};
+			buildConfigurationList = AA527E7F2C8BD4FC008E4A55 /* Build configuration list for PBXProject "MeuPonto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA527E7B2C8BD4FC008E4A55;
+			productRefGroup = AA527E852C8BD4FC008E4A55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA527E832C8BD4FC008E4A55 /* MeuPonto */,
+				AA527E962C8BD4FE008E4A55 /* MeuPontoTests */,
+				AA527EA02C8BD4FE008E4A55 /* MeuPontoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA527E822C8BD4FC008E4A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA527E912C8BD4FE008E4A55 /* Preview Assets.xcassets in Resources */,
+				AA527E8E2C8BD4FE008E4A55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA527E952C8BD4FE008E4A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA527E9F2C8BD4FE008E4A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA527E802C8BD4FC008E4A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA527EBD2C8BD8F5008E4A55 /* WorkSessionViewModel.swift in Sources */,
+				AA527EB62C8BD750008E4A55 /* MenuBarController.swift in Sources */,
+				AA527E8A2C8BD4FC008E4A55 /* ContentView.swift in Sources */,
+				AA527E8C2C8BD4FC008E4A55 /* Item.swift in Sources */,
+				AA527EBB2C8BD8DC008E4A55 /* WorkSessionModel.swift in Sources */,
+				AA527EB82C8BD7F7008E4A55 /* AppDelegate.swift in Sources */,
+				AA527E882C8BD4FC008E4A55 /* MeuPontoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA527E932C8BD4FE008E4A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA527E9C2C8BD4FE008E4A55 /* MeuPontoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA527E9D2C8BD4FE008E4A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA527EA82C8BD4FE008E4A55 /* MeuPontoUITestsLaunchTests.swift in Sources */,
+				AA527EA62C8BD4FE008E4A55 /* MeuPontoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA527E992C8BD4FE008E4A55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA527E832C8BD4FC008E4A55 /* MeuPonto */;
+			targetProxy = AA527E982C8BD4FE008E4A55 /* PBXContainerItemProxy */;
+		};
+		AA527EA32C8BD4FE008E4A55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA527E832C8BD4FC008E4A55 /* MeuPonto */;
+			targetProxy = AA527EA22C8BD4FE008E4A55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA527EA92C8BD4FE008E4A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA527EAA2C8BD4FE008E4A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA527EAC2C8BD4FE008E4A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MeuPonto/MeuPonto.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeuPonto/Preview Content\"";
+				DEVELOPMENT_TEAM = 37C8L4YM2G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = belo.MeuPonto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA527EAD2C8BD4FE008E4A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MeuPonto/MeuPonto.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeuPonto/Preview Content\"";
+				DEVELOPMENT_TEAM = 37C8L4YM2G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = belo.MeuPonto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA527EAF2C8BD4FE008E4A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37C8L4YM2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = belo.MeuPontoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeuPonto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeuPonto";
+			};
+			name = Debug;
+		};
+		AA527EB02C8BD4FE008E4A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37C8L4YM2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = belo.MeuPontoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeuPonto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeuPonto";
+			};
+			name = Release;
+		};
+		AA527EB22C8BD4FE008E4A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37C8L4YM2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = belo.MeuPontoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MeuPonto;
+			};
+			name = Debug;
+		};
+		AA527EB32C8BD4FE008E4A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37C8L4YM2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = belo.MeuPontoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MeuPonto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA527E7F2C8BD4FC008E4A55 /* Build configuration list for PBXProject "MeuPonto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA527EA92C8BD4FE008E4A55 /* Debug */,
+				AA527EAA2C8BD4FE008E4A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA527EAB2C8BD4FE008E4A55 /* Build configuration list for PBXNativeTarget "MeuPonto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA527EAC2C8BD4FE008E4A55 /* Debug */,
+				AA527EAD2C8BD4FE008E4A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA527EAE2C8BD4FE008E4A55 /* Build configuration list for PBXNativeTarget "MeuPontoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA527EAF2C8BD4FE008E4A55 /* Debug */,
+				AA527EB02C8BD4FE008E4A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA527EB12C8BD4FE008E4A55 /* Build configuration list for PBXNativeTarget "MeuPontoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA527EB22C8BD4FE008E4A55 /* Debug */,
+				AA527EB32C8BD4FE008E4A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA527E7C2C8BD4FC008E4A55 /* Project object */;
+}
