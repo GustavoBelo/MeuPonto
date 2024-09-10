@@ -67,7 +67,7 @@ class WorkSessionViewModel: ObservableObject {
     private func updateLunchDuration() {
         guard let lunchStart = workSession.lunchStart, let lunchEnd = workSession.lunchEnd else { return }
         
-        let lunchTime = lunchEnd.timeIntervalSince(lunchStart)
+        let lunchTime = floor(lunchEnd.timeIntervalSince(lunchStart) / 60) * 60 // Arredonda para baixo
         lunchDuration = formatTime(lunchTime)
         
         if lunchTime > workSession.lunchDuration {
@@ -75,7 +75,7 @@ class WorkSessionViewModel: ObservableObject {
             workSession.endTime = workSession.endTime?.addingTimeInterval(extraLunchTime) ?? workSession.startTime?.addingTimeInterval(workSession.workDuration + lunchTime)
         }
     }
-    
+        
     private func updateWorkDuration() {
         if let startTime = workSession.startTime, let endTime = workSession.endTime {
             let totalWorkTime = endTime.timeIntervalSince(startTime)
@@ -139,13 +139,16 @@ class WorkSessionViewModel: ObservableObject {
     }
     
     private func updateTimeRemaining() {
-        endTimeRemaining = formatTime(workSession.remainingTime() ?? 0)
-        lunchTimeRemaining = formatTime(workSession.calculateLunchEndTime()?.timeIntervalSinceNow ?? 0)
+        let remainingTime = floor(workSession.remainingTime() ?? 0 / 60) * 60
+        endTimeRemaining = formatTime(remainingTime)
+        let lunchRemainingTime = floor(workSession.calculateLunchEndTime()?.timeIntervalSinceNow ?? 0 / 60) * 60
+        lunchTimeRemaining = formatTime(lunchRemainingTime)
     }
     
     private func formatTime(_ interval: TimeInterval) -> String {
-        let hours = Int(interval) / 3600
-        let minutes = Int(interval) % 3600 / 60
+        let totalSeconds = Int(interval)
+        let hours = totalSeconds / 3600
+        let minutes = (totalSeconds % 3600) / 60
         return "\(hours)h \(minutes)m"
     }
     
